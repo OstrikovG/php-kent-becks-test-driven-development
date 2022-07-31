@@ -1,0 +1,24 @@
+{
+    "name": "ostrikov-g/php-kent-becks-test-driven-development",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "OstrikovG\\PhpKentBecksTestDrivenDevelopment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\OstrikovG\\PhpKentBecksTestDrivenDevelopment\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "OstrikovG",
+            "email": "ostgleal@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

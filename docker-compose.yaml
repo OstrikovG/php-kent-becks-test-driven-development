@@ -1,0 +1,11 @@
+version: "1.0"
+
+services:
+  php-fpm:
+    container_name: php_kent_becks_test_driven_development_fpm
+    build:
+      context: ./docker/php-fpm
+    ports:
+      - '9000:9000'
+    volumes:
+      - .:/var/www/project
