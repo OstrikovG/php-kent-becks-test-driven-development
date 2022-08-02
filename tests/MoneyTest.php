@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\OstrikovG\PhpKentBecksTestDrivenDevelopment;
 
+use OstrikovG\PhpKentBecksTestDrivenDevelopment\Franc;
 use PHPUnit\Framework\TestCase;
 use OstrikovG\PhpKentBecksTestDrivenDevelopment\Money;
 
@@ -36,5 +37,10 @@ final class MoneyTest extends TestCase
     {
         $this->assertEquals("USD", Money::dollar(1)->currency());
         $this->assertEquals("CHF", Money::franc(1)->currency());
+    }
+
+    public function testDifferentClassEquality(): void
+    {
+        $this->assertTrue((new Money(10, "CHF"))->equals(new Franc(10, "CHF")));
     }
 }
