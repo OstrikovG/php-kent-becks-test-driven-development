@@ -3,3 +3,7 @@
 - Make "amount" private
 - ~~Dollar side-effects?~~
 - Money rounding?
+- ~~equals()~~
+- hashCode()
+- Equal null
+- Equal object
