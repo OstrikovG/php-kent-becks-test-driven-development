@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace OstrikovG\PhpKentBecksTestDrivenDevelopment;
 
-class Money
+class Money implements Expression
 {
     protected int $amount;
     protected string $currency;
@@ -41,5 +41,10 @@ class Money
         $money = $object;
         return $this->amount == $money->amount
             && $this->currency() == $money->currency();
+    }
+
+    public function plus(Money $addend): Expression
+    {
+        return new Money($this->amount + $addend->amount, $this->currency);
     }
 }
