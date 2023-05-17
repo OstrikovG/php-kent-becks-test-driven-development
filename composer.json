@@ -1,5 +1,6 @@
 {
     "name": "ostrikov-g/php-kent-becks-test-driven-development",
+    "description": "A Docker-based introduction with PHP examples for Kent Beck's book 'Test Driven Development: By Example'",
     "type": "project",
     "license": "MIT",
     "autoload": {
